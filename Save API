@@ -1,0 +1,28 @@
+Save Partner API protocol details API
+API URL:- http://172.18.4.95:6060/terragate/v1/apiprotocol
+HTTP Method :- POST
+Headers:-
+Content-Type:application/json
+Request Body
+{
+   "partnerId":"10002",//(Required)
+    "protocolType":"TLS",//(Required,Possible values = TLS,MTLS,VPN)
+    "vpnDetails":[ //(Requried when protocol type is VPN)
+        {"ip":null,
+        "username":null,
+        "password":null
+        }]
+}
+Success Response when partner details are saved first time
+{
+    "referenceId": "79833f49-5135-4970-806f-6c5b824bc702",
+    "status": 200,
+    "message": "Partner Api Protocol details saved successfully"
+}
+Success Response when partner details are saved after first time
+{
+    "referenceId": "d0633b28-683c-4a76-a325-3b4950df418e",
+    "status": 200,
+    "message": "Partner Api Protocol details updated successfully"
+}
+ 
