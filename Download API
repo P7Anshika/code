@@ -1,0 +1,15 @@
+Download TLS Terrapay Certs API Details:-
+ 
+API URL:- http://172.18.4.95:6060/terragate/v1/terrapayCerts?partnerId=10001
+HTTP Method :- GET
+Headers:-
+Content-Type:application/json
+Request Param
+partnerId(Long) - Logged in partner id
+ 
+Success Response :- zip file will be downloaded
+Zip File name:- terrapay_certs_chain.zip
+
+
+
+
